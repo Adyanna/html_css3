@@ -1,0 +1,700 @@
+* {
+    box-sizing: border-box;
+    font-family: 'NetflixSans', sans-serif;
+    color: white;
+    /* outline: 1px solid red; */
+}
+
+@font-face {
+    font-family: 'NetflixSans';
+    src: url('./fonts/netflix-sans-core-variable-full.woff2') format('woff2');
+}
+
+/* =================================== BODY ================================= */
+
+body {
+    background-image: linear-gradient(180deg, rgba(27, 25, 27, 0.8)), url('../images/background_banner.avif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position: top;
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+}
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    place-items: center;
+    gap: 50px;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+/* ================================== HEADER ==================================== */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    padding: 1rem 10rem;
+}
+
+.header_components {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_comp {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.btn {
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    height: 5vh;
+    width: 120px;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-size: clamp(0.6rem, 0.9rem, 1rem);
+
+    &:hover {
+        background-color: rgb(158, 3, 3);
+        border: 1px solid rgb(158, 3, 3);
+    }
+}
+
+.languageSelect {
+    background-color: black;
+    color: white;
+    font-size: clamp(0.6rem, 0.9rem, 1rem);
+    height: 5vh;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ============================ START ================================== */
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contenedor_start {
+    width: 50vw;
+}
+
+.form_componentes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px
+}
+
+h1 {
+    font-size: clamp(2rem, 3rem, 3.5rem);
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input {
+    width: 350px;
+    height: 8vh;
+    background-color: black;
+    border: 1px solid rgb(170, 164, 164);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.btn_init {
+    height: 7vh;
+    width: 160px;
+    font-size: 20px;
+}
+
+/* ========================= tendencias ========================== */
+.tendencias {
+    display: flex;
+    overflow: hidden;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15px;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(31, 29, 29, 0.1), rgba(31, 29, 29, 0.8), rgba(31, 29, 29, 0.9), rgb(0, 0, 0));
+}
+
+.tendencias_components {
+    width: 100vw;
+    padding: 1rem 10rem;
+
+}
+
+.carrucel {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 20rem;
+    width: 200px;
+    height: 40vh;
+    border-radius: 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor_carrucel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: row;
+    flex: 0 0 auto;
+    gap: 0px 10px;
+    scrollbar-width: none;
+    gap: 2vw;
+}
+
+.carrucel h1 {
+    font-size: 6rem;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
+
+/* ============================= MOTIVOS ======================== */
+
+.motivos {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 10rem;
+}
+
+.motivos p {
+    color: rgb(187, 181, 181);
+}
+
+.contenedor_motivos {
+    padding: clamp(5px, 15px, 25px);
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+    border-radius: 10px;
+    height: 50vh;
+    width: 25%;
+    position: relative;
+}
+
+.contenedor_motivos p {
+    font-size: 1rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+}
+
+.icono_motivos {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* ===================================== PREGUNTAS FRECUENTES =================================== */
+
+.preguntasFrecuentes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem 10rem;
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 10px;
+}
+
+.contenido {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: white;
+    background-color: #2d2d2d;
+    margin-top: 1px;
+    display: none;
+    &:hover {
+        animation: show_contenido 2s ease;
+    }
+}
+
+.open {
+    &:hover {
+        animation: close 2s ease;
+    }
+}
+
+@keyframes close {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+
+}
+
+@keyframes show_contenido {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+/* =========================== INICIO SESION ================================= */
+
+.inicioSesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 10rem;
+}
+
+.inicioSesion h3 {
+    text-align: center;
+}
+
+.form_inicio_sesion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px
+}
+
+
+
+/* =============================== FOOTER ================================ */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    padding: 1rem 10rem;
+    color: gray;
+}
+
+.callCenter p,
+a {
+    color: gray;
+}
+
+ul {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: flex-start;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    /* width: calc(100% + 0.75rem); */
+
+    flex-flow: row wrap;
+    width: 100%;
+    /* gap: 15px; */
+}
+
+li {
+    list-style: none;
+    /* padding-top: 15px; */
+    width: 25%;
+    /* min-width: 35%;*/
+    height: 5vh;
+}
+
+.country p {
+    color: gray;
+}
+
+.privacidad p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width:1024px) {
+    .header {
+        padding: 15px 15px;
+    }
+
+    /* =========================SESSION START ==================== */
+
+    .start {
+        width: 100%;
+        /* padding: 60px; */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    /* ================= TENDENCIAS ========================== */
+
+    .tendencias_components {
+        width: 95vw;
+        padding: 1vw 5vh;
+
+    }
+
+    /* ============================ MOTIVOS =========================== */
+
+    .motivos {
+        width: 100%;
+        padding: 15px 15px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .contenedor_motivos {
+        width: 45%;
+        height: 250px;
+    }
+
+    /* ======================PREGUNTAS FRECUENTES ===================== */
+    .preguntasFrecuentes {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    /* =============================INICIO SESION ======================= */
+
+    .inicioSesion {
+        padding: 10px;
+    }
+
+    /* ============================= FOOTER ================================== */
+
+    .footer {
+        padding: 15px;
+    }
+
+    li {
+        width: 30%;
+    }
+
+
+}
+
+
+
+@media (max-width:930px) {
+    body {
+        background-size: auto;
+        width: 100%;
+    }
+
+    .layout {
+        width: 100%;
+    }
+
+    /* ========================== HEADER ====================  */
+    .header_comp {
+        width: 200px;
+    }
+
+    .languageSelect {
+        width: 45px;
+    }
+
+    /* =========================SESSION START ==================== */
+    .start {
+        width: 100%;
+        /* padding: 60px; */
+    }
+
+    .contenedor_start {
+        width: 60vw;
+    }
+
+
+    .form_componentes {
+        /* display: flex; */
+        flex-direction: column;
+
+
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .input_primer_inicio {
+        width: 300px;
+    }
+
+    /* =======================TENDENCIAS======================== */
+    .carrucel {
+        height: 25vh;
+        width: 150px;
+        /* background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; */
+        border-radius: 5px;
+
+        /* flex: 0 0 auto; */
+    }
+
+    .carrucel h1 {
+        font-size: 4rem;
+        /* color: black; */
+        /* text-shadow: 0px 0px 2px white; */
+        /* -webkit-text-stroke: 2px white; */
+    }
+
+    /* =========================== MOTIVOS ============================= */
+
+    .motivos {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        gap: 15px;
+        justify-content: center;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+    }
+
+    .contenedor_motivos {
+        width: 100%;
+        height: 35vh;
+        padding: 10px;
+        border-radius: 10px;
+        gap: 2px;
+    }
+
+    /* =============================== FOOTER ============================ */
+    li {
+        /* list-style: none; */
+        /* padding-top: 15px; */
+        width: 50%;
+    }
+
+    .form_inicio_sesion {
+        gap: 15px;
+    }
+
+    .input_segundo_inicio {
+        width: 250px;
+    }
+}
+
+
+
+
+@media (max-width:480px) {
+    * {
+        padding: 0vh 0vw;
+    }
+
+    body {
+        background-size: auto;
+        width: 100%;
+    }
+
+    .layout {
+        width: 100%;
+    }
+
+    /* ================================ HEADER ===================================== */
+
+    .header {
+        padding: 15px 15px;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .languageHeader {
+        /* height: 5vh; */
+        width: 15vw;
+
+        &:focus {
+            border: 3px solid white;
+        }
+
+    }
+
+    /* =============================== START ===================================== */
+
+    .start {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenedor_start {
+        width: 80vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+
+    .btn {
+        width: 100%;
+    }
+
+
+    form {
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    /* ===================== TENDENCIAS ======================= */
+    .carrucel {
+        height: 25vh;
+        width: 30vw;
+        /* background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat; */
+        border-radius: 5px;
+
+        /* flex: 0 0 auto; */
+    }
+
+    /* .carrucel h1 {
+        font-size: 5rem;
+        color: black;
+        -webkit-text-stroke: 2px white;
+    } */
+
+    /* =============================== MOTIVOS ========================= */
+    .motivos h3 {
+        margin: 10px 0px;
+    }
+
+
+
+
+    .icono_motivos h3 {
+        margin: 5px;
+    }
+
+    /* ============================ PREGUNTAS FRECUENTES ===================== */
+    ul {
+        /* display: flex; */
+        flex-direction: column;
+        /* gap: 5px; */
+    }
+
+    .titulo {
+        height: 10vh;
+        /* margin-top: 5px; */
+        /* padding: 10px; */
+    }
+
+    .contenido p {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    /* ================================= INICIO SESION ========================= */
+
+    .form_inicio_sesion {
+        flex-direction: column;
+    }
+
+    /* ============================= FOOTER=================================== */
+    li {
+        /* list-style: none; */
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    /* .privacidad p {
+        color: gray;
+        font-size: 0.9rem;
+    } */
+
+    .languageFooter {
+        width: 30%;
+    }
+
+
+
+}
