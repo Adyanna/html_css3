@@ -7,6 +7,7 @@ body {
     background-color: black;
     width: 100%;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 
@@ -14,7 +15,8 @@ body {
 .main {
     grid-area: main;
     width: 100%;
-    padding-left: 3rem;
+    padding: 0 3rem;
+    box-sizing: border-box;
 }
 
 /* =======================SECTION HERO========================= */
@@ -128,7 +130,7 @@ body {
 
 .carrusel-seccion {
     display: block;
-    width: 94.5vw;
+    width: 100%;
     background-color: black;
 }
 
@@ -143,9 +145,12 @@ body {
     flex: 0 0 auto;
     overflow-x: auto;
     overflow-y: hidden;
-    overflow: visible;
     scrollbar-width: none;
     gap: 15px;
+}
+
+.carrucel-contenedor::-webkit-scrollbar {
+    display: none;
 }
 
 .carrucel {

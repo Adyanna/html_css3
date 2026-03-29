@@ -22,7 +22,7 @@ body {
 
 .carrusel-seccion {
     display: block;
-    width: 94.5vw;
+    width: 100%;
     background-color: black;
 }
 
@@ -37,9 +37,12 @@ body {
     flex: 0 0 auto;
     overflow-x: auto;
     overflow-y: hidden;
-    overflow: visible;
     scrollbar-width: none;
     gap: 15px;
+}
+
+.carrucel-contenedor::-webkit-scrollbar {
+    display: none;
 }
 
 .carrucel {

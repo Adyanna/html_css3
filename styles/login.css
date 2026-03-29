@@ -161,7 +161,7 @@ form {
 }
 
 .tendencias_components {
-    width: 100vw;
+    width: 100%;
     padding: 1rem 10rem;
 
 }
@@ -186,11 +186,13 @@ form {
     overflow-y: hidden;
     flex-direction: row;
     flex: 0 0 auto;
-    gap: 0px 10px;
     scrollbar-width: none;
     gap: 2vw;
 }
 
+.contenedor_carrucel::-webkit-scrollbar {
+    display: none;
+}
 .carrucel h1 {
     font-size: 6rem;
     color: black;

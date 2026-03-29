@@ -31,7 +31,7 @@ body {
     display: block;
     width: 100%;
     background-color: black;
-    overflow: visible;
+    overflow: hidden;
     padding-bottom: 50px;
 }
 
@@ -41,6 +41,13 @@ body {
     flex-direction: row;
     flex: 0 0 auto;
     gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.carrucel-contenedor::-webkit-scrollbar {
+    display: none;
 }
 
 .carrucel {

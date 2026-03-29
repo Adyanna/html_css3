@@ -139,7 +139,7 @@ body {
 
 .carrusel-seccion {
     display: block;
-    width: 94.5vw;
+    width: 100%;
     background-color: black;
     background: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.1),rgba(0,0,0,0.9),rgba(0,0,0,0.8));
 
@@ -152,9 +152,12 @@ body {
     flex: 0 0 auto;
     overflow-x: auto;
     overflow-y: hidden;
-     overflow: visible;
     scrollbar-width: none;
     gap: 15px;
+}
+
+.carrucel-contenedor::-webkit-scrollbar {
+    display: none;
 }
 
 .carrucel-game {
