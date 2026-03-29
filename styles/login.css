@@ -269,10 +269,8 @@ form {
     }
 }
 
-.open {
-    &:hover {
+.open:hover {
         animation: close 2s ease;
-    }
 }
 
 @keyframes close {
@@ -343,22 +341,16 @@ a {
 
 ul {
     display: flex;
-    /* flex-direction: row; */
     align-items: flex-start;
-    /* flex-direction: row; */
     justify-content: flex-start;
-    /* width: calc(100% + 0.75rem); */
 
     flex-flow: row wrap;
     width: 100%;
-    /* gap: 15px; */
 }
 
 li {
     list-style: none;
-    /* padding-top: 15px; */
     width: 25%;
-    /* min-width: 35%;*/
     height: 5vh;
 }
 
@@ -381,7 +373,6 @@ li {
 
     .start {
         width: 100%;
-        /* padding: 60px; */
     }
 
     h1 {
@@ -469,7 +460,6 @@ li {
     /* =========================SESSION START ==================== */
     .start {
         width: 100%;
-        /* padding: 60px; */
     }
 
     .contenedor_start {
@@ -478,10 +468,7 @@ li {
 
 
     .form_componentes {
-        /* display: flex; */
         flex-direction: column;
-
-
     }
 
     h1 {
@@ -500,20 +487,12 @@ li {
     .carrucel {
         height: 25vh;
         width: 150px;
-        /* background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; */
         border-radius: 5px;
-
-        /* flex: 0 0 auto; */
     }
 
     .carrucel h1 {
         font-size: 4rem;
-        /* color: black; */
-        /* text-shadow: 0px 0px 2px white; */
-        /* -webkit-text-stroke: 2px white; */
-    }
+     }
 
     /* =========================== MOTIVOS ============================= */
 
@@ -529,9 +508,7 @@ li {
         width: 100%;
         gap: 15px;
         justify-content: center;
-        /* flex-direction: row;
-        flex-wrap: wrap; */
-    }
+     }
 
     .contenedor_motivos {
         width: 100%;
@@ -543,9 +520,7 @@ li {
 
     /* =============================== FOOTER ============================ */
     li {
-        /* list-style: none; */
-        /* padding-top: 15px; */
-        width: 50%;
+         width: 50%;
     }
 
     .form_inicio_sesion {
@@ -586,7 +561,6 @@ li {
     }
 
     .languageHeader {
-        /* height: 5vh; */
         width: 15vw;
 
         &:focus {
@@ -629,27 +603,13 @@ li {
     .carrucel {
         height: 25vh;
         width: 30vw;
-        /* background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat; */
         border-radius: 5px;
-
-        /* flex: 0 0 auto; */
     }
-
-    /* .carrucel h1 {
-        font-size: 5rem;
-        color: black;
-        -webkit-text-stroke: 2px white;
-    } */
 
     /* =============================== MOTIVOS ========================= */
     .motivos h3 {
         margin: 10px 0px;
     }
-
-
-
 
     .icono_motivos h3 {
         margin: 5px;
@@ -657,15 +617,11 @@ li {
 
     /* ============================ PREGUNTAS FRECUENTES ===================== */
     ul {
-        /* display: flex; */
         flex-direction: column;
-        /* gap: 5px; */
     }
 
     .titulo {
         height: 10vh;
-        /* margin-top: 5px; */
-        /* padding: 10px; */
     }
 
     .contenido p {
@@ -681,20 +637,11 @@ li {
 
     /* ============================= FOOTER=================================== */
     li {
-        /* list-style: none; */
         padding-top: 15px;
         width: 100%;
     }
 
-    /* .privacidad p {
-        color: gray;
-        font-size: 0.9rem;
-    } */
-
     .languageFooter {
         width: 30%;
     }
-
-
-
 }

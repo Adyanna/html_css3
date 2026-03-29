@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/pages/series.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div class="layout">
+        <header class="header">
+            <section class="menu">
+                <div class="menu-left">
+                    <img src="../images/logo.png" alt="logo" class="logo">
+                    <nav>
+                        <ul class="menu-desk">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./series.html">Series</a></li>
+                            <li><a href="./peliculas.html">Peliculas</a></li>
+                            <li><a href="./juegos.html">Juegos</a></li>
+                            <li><a href="./novedades.html">Novedades populares</a></li>
+                            <li><a href="./miLista.html">Mi lista</a></li>
+                            <li><a href="./explorar.html">Explora por idiomas</a></li>
+                        </ul>
+                        <select class="menu-mobile" value="explorar">
+                            <option>Inicio</option>
+                            <option>Series</option>
+                            <option>Peliculas</option>
+                            <option>Juegos</option>
+                            <option>Novedades populares</option>
+                            <option>Mi lista</option>
+                            <option>Explora por idiomas</option>
+                        </select>
+                    </nav>
+                </div>
+                <div class="menu-right">
+                    <div>
+                        <svg viewBox="0 0 24 24" width="24" height="24" data-icon="MagnifyingGlassMedium"
+                            data-icon-id=":r1d:" aria-hidden="true" class="search-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0m-1.38 7.03a9 9 0 1 1 1.41-1.41l5.68 5.67-1.42 1.42z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <!-- <img src="" alt="buscador"> -->
+                    <div id="menu-option-child">
+                        <p>Niños</p>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 24 24" width="24" height="24" data-icon="BellMedium" data-icon-id=":r1:"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M13 4.07A7 7 0 0 1 19 11v4.25q1.58.12 3.1.28l-.2 2a93 93 0 0 0-19.8 0l-.2-2q1.52-.15 3.1-.28V11a7 7 0 0 1 6-6.93V2h2zm4 11.06V11a5 5 0 0 0-10 0v4.13a97 97 0 0 1 10 0m-8.37 4.24C8.66 20.52 10.15 22 12 22s3.34-1.48 3.37-2.63c.01-.22-.2-.37-.42-.37h-5.9c-.23 0-.43.15-.42.37"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <select class="menu-option-perfil">
+                            <option value="">Administrar perfiles</option>
+                            <option value="">Tranferir perfil</option>
+                            <option value="">Cuenta</option>
+                            <option value="">Centro de ayuda</option>
+                            <option value="">Cerrar sesion</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="sub-header">
+                <div class="sub-header-right">
+                    <h1>Series</h1>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Géneros</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/10673?bc=83">Acción</a></li>
+                                <li><a href="/6721?bc=83">Animes</a></li>
+                                <li><a href="/78103?bc=83">Asiáticos</a></li>
+                                <li><a href="/52117?bc=83">Británicos</a></li>
+                                <li><a href="/52780?bc=83">Ciencia y naturaleza</a></li>
+                                <li><a href="/10375?bc=83">Comedias</a></li>
+                                <li><a href="/27346?bc=83">Contenido infantil</a></li>
+                                <li><a href="/60951?bc=83">De adolescentes</a></li>
+                                <li><a href="/72404?bc=83">De EE.UU.</a></li>
+                                <li><a href="/25788?bc=83">Deportes</a></li>
+                                <li><a href="/10105?bc=83">Docus</a></li>
+                                <li><a href="/11714?bc=83">Dramas</a></li>
+                                <li><a href="/67708?bc=83">Latinoamericanos</a></li>
+                                <li><a href="/4366?bc=83">Misterios</a></li>
+                                <li><a href="/26156?bc=83">Romances</a></li>
+                                <li><a href="/1372?bc=83">Sci-fi y fantasía</a></li>
+                                <li><a href="/75392?bc=83">Series policiales</a></li>
+                                <li><a href="/82718124?bc=83">Sigue tu estado de ánimo</a></li>
+                                <li><a href="/10634?bc=83">Telenovelas</a></li>
+                                <li><a href="/83059?bc=83">Terror</a></li>
+                                <li><a href="/89811?bc=83">Thrillers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-header-left">
+                    <button class="aro-row-toggle" aria-label="Vista de lista" tabindex="0"><svg viewBox="0 0 24 24"
+                            width="24" height="24" data-icon="ListMedium" data-icon-id=":rd:" aria-hidden="true"
+                            class="svg-icon svg-icon-rows" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+                            <path fill="currentColor" fill-rule="evenodd" d="M24 6H0V4h24zm0 12v2H0v-2zM0 13h12v-2H0z"
+                                clip-rule="evenodd"></path>
+                        </svg></button>
+                    <button aria-label="Vista de cuadrícula" class="aro-grid-toggle" tabindex="0"><svg
+                            viewBox="0 0 24 24" width="24" height="24" data-icon="GridFillMedium" data-icon-id=":re:"
+                            aria-hidden="true" class="svg-icon svg-icon-grid" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" role="img">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M1 3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm0 10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm12-9a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1zm1 9a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg></button>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <!-- <section idx="inicio"> -->
+            <section class="hero">
+                <div class="hero-content">
+
+                    <div class="hero-logo">
+                        <img alt="Stranger Things" class="hero-logo-img"
+                            src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/eqGYB0rWyxMG8aWlkQtIAq5OXYY/AAAABTaAm_rwBrPAVKE95p8noYJbxEJ0t5P2JFJG9j_4MdpfZWqrLDZc7QgDYitF8hEeRk7Ha9ExlIfLL5UFFLdCRP7rr-pgFAka07xDyDsM0qHHERRqFUNkNTGSK-K3k5_HhO3HA0aCEcOocJ-uNBhkw4oFYiJLD-c0p7Fo2ZpCRCb7crIgQvZiCw.webp?r=931">
+                    </div>
+                    <!-- <h2>Moisés y los mandamientos</h2> -->
+                    <p>Después de la extraña desaparición de un niño, un pueblo se encuentra ante un misterio que revela
+                        experimentos secretos, fuerzas sobrenaturales y a una niña muy especial.</p>
+                    <div class="hero-buttons">
+                        <button class="button-reproducir">
+                            Reproducir
+                        </button>
+                        <button class="button-info"> Más información</button>
+                    </div>
+                </div>
+                <div class="hero-info">
+                    <span></span>
+                    <p>16+</p>
+                </div>
+            </section>
+            <section class="carrusel-seccion carrucel-inicio">
+                <div>
+                    <h3>Nuestra selección de hoy para ti</h3>
+                    <div class="carrucel-films">
+                        <div class="slider">
+                            <ul class="pagination-indicator">
+                                <li class="active"></li>
+                                <li class=""></li>
+                            </ul>
+                        </div>
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSUx-J8dJx_ZJc-sCbeKpvLmvmccqhn23eJr02LXQIBHT4ewHcqwtTKZnpGQoXF8JW6vj7xCcKWOd3vtpaVTrHLqJ_jOzvupY44zrevTW26Ro8nmO692qoTkAKmGCL8AocWp8iIcsjAJOOoMzyY-fAZNB_EHWl2CgFM.webp?r=d40"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcKODG3IGPWBoZZo1UP96j-Sw15Z7wl7J0gLhyAY-WymSNq2jg-RK5XE22Y32skkK4-pr3mQ0nXxd42qCh2uXDJ8tTS02K8d1lAf8h6xi4QLGXWLf2KpfnT8vsQd63hdLVRs3zJ2eW7wl5SdY25TBQwoM-XyVsLfoSdEY6g3fX3DGHNPSPKq6JZ3kVUTKdGM4_fAWOJvsHJLR9MWyvasbpXE73c1p6vwMMddSh91.jpg?r=46d"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUlupCxgr88N19O8ZuKp5XIJ7TjDT8YxAik7hbRMuhhLBDM4NpsbcmleFa0B5GI2hgSoT4Ez7MrAcfOmIwqu113gA3wchMIxSTuVMbzGqCVSpdX_eGF9Bl4M3d-7BeALzqKie3kMPbnHhqxM0ih56o4qX4Iq4BYOEpDN6xlHvVC4TwdjzH4RlCUnKyytEyQ4G2JcMr-_7Ri8kPRlREFPjSqbh1bRoCYIt1E7v8zvlfukE96FqV6dEBwmxi68nMrUsQEUYkgaaGLIu-14MvvmtFLEVbVj2o-G7UygL4sIv_n_QUKbfC5CkRbgrLCMHp1yMOI.webp?r=fcc"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdd4WBp8Gm7rTLMpzIiFnSerW3RkyTZom0aYE1kRoAPXxG3AGRwTtKkI5Kbh1wsu3ScPxbJiLMlaJWHEgJZ_b9sR1nJCMt8epSuWYBPDGDKAaBdTvgAbj-EbNtP4zATQ8-j8IabHHntbvWJVTmMveak3hh0bUTofpq7MMYyDp92lqYvmEAtIo4tvXSES59i8FAXpOemdCvqXJHwKLD1w6zTPREqwa7mDKiD1rMLb7A.jpg?r=20e"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSI_QvVRocDIpHKAZUw0NaISl43fw_oGf_E10n33o0s9SCx6VQtOxeAFaT9x58bJq88jhxhSpzXzyE0iuFmR35I2ziFOQoiKS2M.jpg?r=90c"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX1vYbI-Sp6TD5470y1vQpNdhoiiFnEMBs1PnMPP24UvoV1oBsgxNPxv7RXoZA1S5knXQDH140jEaMzTv1ifHd89eNuwkE9IsxA.webp?r=f81"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdNdmfMQYAflB1onU1-W4-LZFxpN1wY0tzfITx8rGVqEw1-cmaa35Gv6hZk58q5xQaC8UX709pcr8zI3hY4UyQKgPb8qYWjcuaE.jpg?r=541"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY67EE45PnEYwqPrmSbqO_p40j1iWjJYrepuRRljE5o747BRFp_Ki2uIQSuiDSZn5DOUH-D06BkH3E0ZEHH2aJy6koNTZ4iu0Sr7kyzBqlWvvVB9fl-aUy-NxnaYyw-I1Zy6hTDikDJOXdX3GA6pPKM_XK49jvcBK7-09pDVgyxeQto.jpg?r=0cc"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXTg0gCVnocbFWGYWm-52J1PCuemaimXWYiYKCOPZA77crKjspbQJf8wNu0b6jYm6ZqxgqLkbgerRDfnu8hQya1mD43ml3j5Y8c.webp?r=c42"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb-65Pr4ENRFPVeJ8VRl_u5M1BWXu8kGTfyam_VakrtF7GiTjusxBcpyMoVLbwFzhTzK85M6cii3I6myJstbpNqLH2jqRs90NzQ.webp?r=8e4"
+                                    alt="seleccion"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABa8nhdYxFn0SdqNV-tS8OFnRaCd1ZPccVs-gTsN__4oi0ssn1y5hEano35W53ABxDqXOR1zQRfu3H-XRvBhtif97oOmTJfSAjgM.jpg?r=ce8"
+                                    alt="seleccion"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carrusel-seccion">
+                <div>
+                    <h3>Telenovelas</h3>
+                    <div class="carrucel-films">
+                        <div class="slider">
+                            <ul class="pagination-indicator">
+                                <li class="active"></li>
+                                <li class=""></li>
+                            </ul>
+                        </div>
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbziMRbCNuKNnm-1t8iiKnh1Z5_tjltz3Lcalr9WLd0FDrcT3JLEgFIcUDe5wg1ZY40oJO5ecTcsc46oiWboPuaYqWhezcNQzTw.webp?r=3d6"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVF_suslXBZ7W_d0R-eNxCRbmNPdzmDvyrNCqF1Gj1IAgKlpu_F33uUiRFYZpoI0aQSQT4J16hZjshLpceB4p785Zmm2BB4xCJ3OvBgPhHagkF7j8wMi3ijDJBRkYiJXnuwcquqT452Ci_e2IZL58Ex66ulo9gT36G-nAGGSDdlSHCDMYs09nks_9EJDvnPFG5GLoaujPLWlpRcJ6i5vcyWNzS-tAXTAqDzZ3O80rSyzYuMhoXsb4dF0_ODOpH0JKQo5ZCjV7re__omiIguhrXt45CDwE-hje2_NId5lVyqbkLOQ9De_x9vPA3rWoH5k.jpg?r=33d"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYEfAZZVV_p8XTeN2tVwlvL0Qe6dZQkoJQli7mTDp1OeIKlZM3veOYPHe8ZtaYn-3AWFrTgymPTPHjolmxX7FtN0jmu6s4T7KYo.webp?r=8b1"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABT-UvF0nrkYDLX5udbV0cbeT3XPl6nhbu8Vm39QQfT7lc2vYRi03_O9YEVbwizZbVHaxtUWLwvTvGzvwXfhzodvZMxD6cvasm4E.webp?r=d07"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABd1xOJSxaTL-0mVsdg0jc-DTfeh5wzz4DGMaLQqqN-2dhfGFRGMv8ZAEmOYVT66XgercNshD-SZ4u_18aLW3VUyA4frld5KCQEs.webp?r=1c1"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZYdv7hpW4rmhwKQaxzjNi_3aqq143DftdsvU_6A2ZJSwVtycUwOAJMBPu5inNw0_fGYUa9WcRDc1yzY4JwFRt6lyw4H91zX7mE.jpg?r=d44"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdvyvfOBw12wsFfV2tPo_-5QyqeEWQXlBpBn1Fmk7VrD3AmLhXUJIXjq_MTTQ9vr3fVQ-3xDUAIzLAUbEm3uIvGscg7waszxyx4.webp?r=8fe"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX3Dnuan06Pn6TPCqoSaSSVUPRUjneY8IWfbR17oRsPK-kI4fOLRu5QmaXZENimgmogXHZt0gR5QRo38LAkkWcgmbtivj1ZWKh0.webp?r=f4f"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY67EE45PnEYwqPrmSbqO_p40j1iWjJYrepuRRljE5o747BRFp_Ki2uIQSuiDSZn5DOUH-D06BkH3E0ZEHH2aJy6koNTZ4iu0Sr7kyzBqlWvvVB9fl-aUy-NxnaYyw-I1Zy6hTDikDJOXdX3GA6pPKM_XK49jvcBK7-09pDVgyxeQto.jpg?r=0cc"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYhtMZpCzF-7HXSOzmAEXcpm5bw5wizw7cYsrJ3-e3zFU3BSJ07HPd9k-x76nFY08O1OyMdcl4QwnZZDEdi2I9zPFCu8ZnuSdRw.webp?r=eeb"
+                                    alt="novelas"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZ6SyqcRByJO1qUj-QpR_oimmoq_K8PK3wqDV4iAfpKQHyToxBWyM09Vi1WRA9cLE3BoTP5hVH9-dOASG5X7c2Gyms38djaneN8.jpg?r=9a6"
+                                    alt="novelas"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carrusel-seccion">
+                <div>
+                    <h3>Series dramaticas coreanas</h3>
+                    <div class="carrucel-films">
+                        <div class="slider">
+                            <ul class="pagination-indicator">
+                                <li class="active"></li>
+                                <li class=""></li>
+                            </ul>
+                        </div>
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXTg0gCVnocbFWGYWm-52J1PCuemaimXWYiYKCOPZA77crKjspbQJf8wNu0b6jYm6ZqxgqLkbgerRDfnu8hQya1mD43ml3j5Y8c.webp?r=c42"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeEzTahQqxmjoXsvEpJtcj9O0sQZxm5rg33zASyN-VJlF8438si1FBU9MszbnyAWba-3QSbV874yjSVUokjCcJP1pNKrJiAK77s.webp?r=fbc"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdd4WBp8Gm7rTLMpzIiFnSerW3RkyTZom0aYE1kRoAPXxG3AGRwTtKkI5Kbh1wsu3ScPxbJiLMlaJWHEgJZ_b9sR1nJCMt8epSuWYBPDGDKAaBdTvgAbj-EbNtP4zATQ8-j8IabHHntbvWJVTmMveak3hh0bUTofpq7MMYyDp92lqYvmEAtIo4tvXSES59i8FAXpOemdCvqXJHwKLD1w6zTPREqwa7mDKiD1rMLb7A.jpg?r=20e"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWd2y6ae3IFohXvN7vcXmWaNOKwN-PDop94f96Jbr5qtP8xDHYWE7nn72d6s3fRdL4RUA8Awr9gAOQCs1HBUWVT3zVVqejUqlkY.jpg?r=c83"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABef3ksFA8L4fy5EI22bfdM0KHRqz47EQRf9ZjfBUu0chsm07a6YLN3LcdpU_CSdd54wQafkc-oJrs8tGmqN5y7tv4N_1H_8xTho.jpg?r=fb9"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcvlH9TAqVZM6YHkjHeS5baWspjtmJH2YtyZfLwjRfA_hkbmiNFD9eAxcOaelPQip7xkjeCdLcWDnzvNv_Eaxhin784rSDiYouRlkagdCOW5c0KIxL6Va18q8SPaFoYsFzlqs75E7yKyxhCh6qZJFFrg3ZOCqO7wQTAsA2zv_c1CBpvWj3Bh0cQzteEgev1QrGvklL7Vknimn-u0K9Q_DQ0Y5eePsgYx_27o87Bt-HuSv7bmN60AtS4yaTe2849oaNfTFUXR5s82nilu4nNC1obFWYctuEvI4AOfA8qpGmxic0cawcktufE_rKQGB6_Ct_I.jpg?r=d79"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcm8zFjAprLl5VxI6RK9Fm5sODsoHbSBuSmgoGms0z_jjn9eaw2XoJqt5qLce79OQ_vjuvlDES9dTuAZxcuQ47MQ3Vixao5y97Y.jpg?r=901"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYCW4J3icrxw-0Mejnp1QtT5uPQ_bj3nFvmxwDU_rA0YYmoEjpR-DYfIAWInmbk_O94ePwx2RoUuafOXfaDocY2D1cpLBGuUbzk.jpg?r=d64"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSkLOsDxaeazp7mwBxHO1Se9cSHnBggiVN0Kz76qmsUrW8ab6zwfIFHjIxgcUQNNEf_NCNsGHuUMWguUaiIXxNtmQCQs8a4b4BwZDAdWv9kIfJjBgKRVNsq6CkDssOy4Nae3djNyl7KfoV4XgjR07iFTnXa76pQdoSfqhl8xM0IdbmyNWIsikgpetgYafrU6mItaBdppl_fQOBmCVyJkO7rt88lf8Vqe68T_FKlRW4MC1d_Z63Q1n7FFIFucKMeyay3BLyORdo1pSSWVQ5JHyfKeS8_GrESgigcBAO7GbttHUw6-9VDJb0NtQWtsVx6l.jpg?r=37f"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdNdmfMQYAflB1onU1-W4-LZFxpN1wY0tzfITx8rGVqEw1-cmaa35Gv6hZk58q5xQaC8UX709pcr8zI3hY4UyQKgPb8qYWjcuaE.jpg?r=541"
+                                    alt="novela coreana">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTbBheZ0Vg-vg9kFZumaaJe7v7iF18fkBPUAC5IHGl5a4yPB49bf-B8kyGEGopt3XWvSLabxSoKbNxe3WpFabTP_hrKQ_BtHazI.jpg?r=625"
+                                    alt="novela coreana">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carrusel-seccion">
+                <div>
+                    <h3>Series de suspenso</h3>
+                    <div class="slider">
+                        <ul class="pagination-indicator">
+                            <li class="active"></li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+                    <div class="carrucel-films">
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYgD2CnGrbSX6hdQAwZNLARfmm2PEIYAq_CBC4HnWiHvodIBVP8nhKVLNJay33D38afT_G0vooglZR51kvnRWc3Uyc9rk6qbzhjlm59mCoL8fVxiknH0QN8qHFfti7ahNhxxlGi0SSbrzYk4YjDrIf61ZQiPTIw7TyftpfGTzNg25Y1SQPOu6s7vSl1upYu0CDJiKJW6T0fipX2ASVyGXUq5uP60RNuQC9HzM7Q3mw.webp?r=c2d"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABS0lVBOAx-fQyubVZPsRf3Rq2xN0uvCrTKEPo_lGvv3l9vDZnQGExl9My1FufVYUtchDwhfHeHMtVFXifbqI0--bnZIn3uN5zCs.webp?r=55a"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWXOzDFdkp6IM5xGaFdkbTWsR9UFrJFckTeElulOM1xlr2iOqnfmMZ78VJWRzSVpK9AB79F1gyNuKleCoMtqu1KsJC44JNVudUlBaYAn65dpXQ6Fl9QwZp-byKB7AgLmjg8L6GlChLLoB2-KaLf4Uh48cKmuIP2xGez8SKK3zc0SZJU.webp?r=990"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdPTw9i74LWMTjSW_Yq61M4Dt4CHnVZZ5p92iJEaMrXhQ1D4CUnWz9-_yF5enSgza9cW4LNfOWQUwPw7Vk28DYUA5PjQnYLXxVY.jpg?r=131"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZ_wyuaKDX2rC8U6CONyA1ZeHvlF8tcl3bTw7rcp4dnY9ziAEwIy_Gb6-cUO7khOgUB9sQoOr5YZcDqZ7JL0UZD2ImpFysUikCo.webp?r=01d"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABb-65Pr4ENRFPVeJ8VRl_u5M1BWXu8kGTfyam_VakrtF7GiTjusxBcpyMoVLbwFzhTzK85M6cii3I6myJstbpNqLH2jqRs90NzQ.webp?r=8e4"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTQy11wD0gVHm4yoiuqP1GHdPHxSCSw3B7bHoM6ykdCltQHOdG--wzT1A7cOuvGnZ9W-skU0XQxmQP0uqJCWS_3Q3dItTGpkx2Y.webp?r=e4d"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY67EE45PnEYwqPrmSbqO_p40j1iWjJYrepuRRljE5o747BRFp_Ki2uIQSuiDSZn5DOUH-D06BkH3E0ZEHH2aJy6koNTZ4iu0Sr7kyzBqlWvvVB9fl-aUy-NxnaYyw-I1Zy6hTDikDJOXdX3GA6pPKM_XK49jvcBK7-09pDVgyxeQto.jpg?r=0cc"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUEkbi3mqR99RTRBG8Jy-9LtewUPAEZkAma5zx7S3oEDzVaJKJ_BGPg4Zcgggysn9Z6OrstKo-ojaDyXOl3eF2DYpXFsX40LEUg.jpg?r=8d4"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfCOLT-Y46_0cnOnUNq7ur_LAcx2cyMGUGjE-U-4eRnwhqrxDn4W9McXItZsudbp0SW9DNu1TmStFzvqkLgkOzQHJX9PnkFPxzQ.jpg?r=4af"
+                                    alt="suspenso"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZN-dQzyIg0B4LgYX1cSAm-vcZcn1AkdxxhaIO9PqOao9OD9Y2OXzVTdFp19nh0P-ACjNU5gOA2dVULaSWuMPN7H_L7DAsWYA18.jpg?r=753"
+                                    alt="suspenso"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- </section> -->
+        </main>
+        <footer class="footer">
+            <section class="social-link">
+                <a href="https://www.facebook.com/Netflixmx" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="FacebookMedium" data-icon-id=":rk:"
+                        aria-hidden="true" class="svg-icon svg-icon-facebook-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M13.99 13.16v8.82h-3.95v-8.82h-3.2V9.51h3.2V6.73c0-3.16 1.9-4.91 4.78-4.91q1.42.02 2.82.25v3.1h-1.6A1.82 1.82 0 0 0 14 7.15V9.5h3.5l-.56 3.65z"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+                <a href="https://www.instagram.com/NetflixLAT" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="InstagramMedium" data-icon-id=":rl:"
+                        aria-hidden="true" class="svg-icon svg-icon-instagram-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M21.93 16.123a5.96 5.96 0 0 1-1.615 4.189 5.9 5.9 0 0 1-4.19 1.615c-1.651.094-6.6.094-8.25 0a5.96 5.96 0 0 1-4.19-1.615 5.92 5.92 0 0 1-1.615-4.189c-.093-1.651-.093-6.6 0-8.25a5.94 5.94 0 0 1 1.615-4.19 5.95 5.95 0 0 1 4.19-1.61c1.651-.094 6.6-.094 8.25 0a5.96 5.96 0 0 1 4.19 1.615 5.92 5.92 0 0 1 1.615 4.189c.093 1.651.093 6.595 0 8.246M20.2 12c0-1.455.12-4.578-.4-5.894a3.37 3.37 0 0 0-1.9-1.9c-1.312-.517-4.439-.4-5.894-.4s-4.578-.121-5.894.4a3.38 3.38 0 0 0-1.9 1.9c-.517 1.312-.4 4.439-.4 5.894s-.121 4.578.4 5.894a3.38 3.38 0 0 0 1.9 1.9c1.312.517 4.44.4 5.894.4s4.578.121 5.894-.4a3.38 3.38 0 0 0 1.9-1.9c.519-1.312.4-4.439.4-5.894m-3.07 0A5.127 5.127 0 1 1 12 6.873 5.12 5.12 0 0 1 17.129 12zm-1.794 0a3.333 3.333 0 1 0-6.664 0 3.333 3.333 0 0 0 6.663 0zm2-4.141a1.2 1.2 0 1 1 1.2-1.2 1.193 1.193 0 0 1-1.197 1.2z"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+                <a class="social-link" href="https://twitter.com/netflixLAT" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="TwitterMedium" data-icon-id=":rm:"
+                        aria-hidden="true" class="svg-icon svg-icon-twitter-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M20.77 8.2A12.65 12.65 0 0 1 8.03 20.96c-2.44 0-4.83-.7-6.88-2.01q.54.06 1.08.05a9 9 0 0 0 5.56-1.91 4.5 4.5 0 0 1-4.19-3.1q.42.06.85.06.6 0 1.17-.15a4.5 4.5 0 0 1-3.58-4.4v-.06a4.5 4.5 0 0 0 2.02.57 4.5 4.5 0 0 1-1.38-5.99c2.27 2.8 5.63 4.5 9.23 4.69a4.48 4.48 0 0 1 7.64-4.09q1.51-.3 2.84-1.08A4.5 4.5 0 0 1 20.42 6q1.34-.15 2.58-.69a10 10 0 0 1-2.25 2.32q.02.28.02.58"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+                <a class="social-link" href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="YoutubeMedium" data-icon-id=":rn:"
+                        aria-hidden="true" class="svg-icon svg-icon-youtube-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M22.54 6.67c-.25-.95-1-1.7-1.94-1.96-1.72-.46-8.6-.46-8.6-.46s-6.88 0-8.6.46c-.95.26-1.69 1-1.94 1.96A29 29 0 0 0 1 12q-.02 2.69.46 5.33c.25.95 1 1.7 1.94 1.96 1.72.46 8.6.46 8.6.46s6.89 0 8.6-.46c.95-.26 1.69-1 1.94-1.96q.48-2.64.46-5.33.02-2.69-.46-5.33m-12.79 8.6V8.73L15.5 12z"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+            </section>
+            <section class="atencion_cliente">
+                <ul>
+                    <li><a href="/browse/audio-description" target="_self">Audio descriptivo</a></li>
+                    <li><a href="https://help.netflix.com/" target="_self">Centro de ayuda</a></li>
+                    <li><a href="/redeem" target="_self"> Tarjetas de regalo</a></li>
+                    <li><a href="https://media.netflix.com/" target="_self">Prensa</a></li>
+                    <li><a href="http://ir.netflix.com/" target="_self"> Relaciones con inversionistas</a></li>
+                    <li><a href="https://jobs.netflix.com/" target="_self">Empleo</a></li>
+                    <li><a href="https://help.netflix.com/legal/termsofuse" target="_self">Términos de uso</a></li>
+                    <li><a href="https://help.netflix.com/legal/privacy" target="_self">Privacidad</a></li>
+                    <li><a href="https://help.netflix.com/legal/notices" target="_self">Avisos legales</a></li>
+                    <li><a href="/Cookies" target="_self"> Preferencias de cookies</a></li>
+                    <li><a href="https://help.netflix.com/legal/corpinfo" target="_self">Información corporativa</a>
+                    </li>
+                    <li><a href="https://help.netflix.com/contactus" target="_self">Contáctanos</a></li>
+                </ul>
+            </section>
+            <section class="derechos_autor">
+                <p>© 1997-2026 Netflix, Inc.</p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

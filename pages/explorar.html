@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/pages/explorar.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div class="layout">
+        <header class="header">
+            <section class="menu">
+                <div class="menu-left">
+                    <img src="../images/logo.png" alt="logo" class="logo">
+                    <nav>
+                        <ul class="menu-desk">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./series.html">Series</a></li>
+                            <li><a href="./peliculas.html">Peliculas</a></li>
+                            <li><a href="./juegos.html">Juegos</a></li>
+                            <li><a href="./novedades.html">Novedades populares</a></li>
+                            <li><a href="./miLista.html">Mi lista</a></li>
+                            <li><a href="./explorar.html">Explora por idiomas</a></li>
+                        </ul>
+                        <select class="menu-mobile" value="explorar">
+                            <option>Inicio</option>
+                            <option>Series</option>
+                            <option>Peliculas</option>
+                            <option>Juegos</option>
+                            <option>Novedades populares</option>
+                            <option>Mi lista</option>
+                            <option>Explora por idiomas</option>
+                        </select>
+                    </nav>
+                </div>
+                <div class="menu-right">
+                    <div>
+                        <svg viewBox="0 0 24 24" width="24" height="24" data-icon="MagnifyingGlassMedium"
+                            data-icon-id=":r1d:" aria-hidden="true" class="search-icon"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0m-1.38 7.03a9 9 0 1 1 1.41-1.41l5.68 5.67-1.42 1.42z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <!-- <img src="" alt="buscador"> -->
+                    <div id="menu-option-child">
+                        <p>Niños</p>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 24 24" width="24" height="24" data-icon="BellMedium" data-icon-id=":r1:"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M13 4.07A7 7 0 0 1 19 11v4.25q1.58.12 3.1.28l-.2 2a93 93 0 0 0-19.8 0l-.2-2q1.52-.15 3.1-.28V11a7 7 0 0 1 6-6.93V2h2zm4 11.06V11a5 5 0 0 0-10 0v4.13a97 97 0 0 1 10 0m-8.37 4.24C8.66 20.52 10.15 22 12 22s3.34-1.48 3.37-2.63c.01-.22-.2-.37-.42-.37h-5.9c-.23 0-.43.15-.42.37"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <select class="menu-option-perfil">
+                            <option value="">Administrar perfiles</option>
+                            <option value="">Tranferir perfil</option>
+                            <option value="">Cuenta</option>
+                            <option value="">Centro de ayuda</option>
+                            <option value="">Cerrar sesion</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="sub-header">
+                <div class="sub-header-right">
+                    <h1>Explora por idiomas</h1>
+                </div>
+                <div class="sub-header-idiomas">
+                    <p>Seleciona tus preferencias</p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Idioma original</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/10673?bc=83">Idioma Original</a></li>
+                                <li><a href="/6721?bc=83">Doblate</a></li>
+                                <li><a href="/78103?bc=83">Subtitulos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Idioma original</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="/browse/original-audio/100379/de">Alemán</a></li>
+                                <li><a href="/browse/original-audio/107456/ar">Árabe</a></li>
+                                <li><a href="/browse/original-audio/107555/ko">Coreano</a></li>
+                                <li><a href="/browse/original-audio/107547/da">En danés</a></li>
+                                <li><a href="/browse/original-audio/107463/ml">En malabar</a></li>
+                                <li><a href="/browse/original-audio/100397/th">En tailandés</a> </li>
+                                <li><a href="/browse/original-audio/107470/te">En telugu</a></li>
+                                <li><a href="/browse/original-audio/100396/es">Español</a></li>
+                                <li><a href="/browse/original-audio/107558/tl">Filipino</a></li>
+                                <li><a href="/browse/original-audio/3307421/nl">Flamenco</a></li>
+                                <li><a href="/browse/original-audio/100378/fr">Francés</a></li>
+                                <li><a href="/browse/original-audio/107461/hi">Hindi</a></li>
+                                <li><a href="/browse/original-audio/81314769/id">Indonesio</a> </li>
+                                <li><a href="/browse/original-audio/107548/en">Inglés</a></li>
+                                <li><a href="/browse/original-audio/107553/it">Italiano</a></li>
+                                <li><a href="/browse/original-audio/107554/ja">Japonés</a></li>
+                                <li><a href="/browse/original-audio/81314162/ms">Malayo</a></li>
+                                <li><a href="/browse/original-audio/107556/zh">Mandarín</a></li>
+                                <li><a href="/browse/original-audio/109174/nl">Neerlandés</a></li>
+                                <li><a href="/browse/original-audio/107557/nb">Noruego</a></li>
+                                <li><a href="/browse/original-audio/107559/pl">Polaco</a></li>
+                                <li><a href="/browse/original-audio/107465/pt">Portugués</a></li>
+                                <li><a href="/browse/original-audio/107468/sv">Sueco</a></li>
+                                <li><a href="/browse/original-audio/107469/ta">Tamil</a></li>
+                                <li><a href="/browse/original-audio/81314775/tr">Turco</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>ordenar por</p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Idioma original</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a >Sugerencias para ti</a></li>
+                                <li><a tabindex="0">Año de lanzamiento</a></li>
+                                <li><a tabindex="0">A-Z</a></li>
+                                <li><a tabindex="0">Z-A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="carrusel-seccion">
+                <div>
+                    <div class="carrucel-films">
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcvA1fuyoyO7tIcoumbGkgbGKLaxd6NkbyjtQvY661wzPYXzSt_KxXNz5H_HVyF2RFwRQ8WdjtkrV2MOPOMvArZJlRdVeHqaQ2tForufxTHuuq7hPOUxhyl5DCbcVwLFRIi5XL4CBpfWhpm2q678WI62NA9t14fZRXWzBNEEo2GAzRhBR_EVgvd0vtS92xMWHM4RI-zdMp9eIhfUXJApErQKQiJxIBAbNAyLl4xL.jpg?r=70d"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABaMG-MKVz9eXWmYPZshO2xTFdDa7tFJgKJ5WEm67BcCWKUEG0vEif2aEXxlazfqtzkGLsvDRARm4NDkna1MDS90DHJzus4v3qRI.jpg?r=0cd"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYxJTTpa0vbMIzAnjlwhzjnct1xb_8c4sHZMFNHMuYbZG36HpymqS9KUjYk8PxOBNlwlegNWVjAf1PhjlM7bJ1qy1YWW57fCVHAOCJOO3bCcrB7zkbgweZMSXVHph_RaotF_60BUul4JewltchEHkn48TuUyJNU7YQK5OcKWeLvD8TjMMx3kKg9yPXS7jd0pkVM0YkDDnO5JDV_jy-cNnlnNVZvihlPeIZ6Tevl1AXLQvUD_givyFfp7plKJ-tFssSfmCu9IMm37Csga4QMnth9UFsURZijQ4VmSzVOpTeLN-2Uh.jpg?r=49f"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZzWXoaYaSKtL8B3FtjP8sBPVGP1qvJJfmPPqLlwT_FshGIEdrZ9j1NXOCajcBBukCzD_yS70bwAQ7vKY41kbICwN2Vs4N7qj_o.jpg?r=e83"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTiACW4jeDHaOp9oJNIJTZ7QL6omKmBCsXGTKaRaeqZr3PHGV15uZOGTHjav-ieuMyqynSdMQ77chggW6-Nkk3gEc1OKxP5F0QU.jpg?r=a39"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABWbi_BaOgCq-MvxUVqBQi0yI45UWoY2efmeoEMxoUU9sAjMFQtXRbiQb6yTAjBelcXtLtHKIdBoqRU2zSzcVHWJngVlGjCsebqs.jpg?r=618"
+                                    alt="explorar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="carrusel-seccion">
+                <div>
+                    <!-- <h3>Estrenos de la semana próxima</h3> -->
+                    <div class="carrucel-films">
+                        <div class="slider">
+                            <ul class="pagination-indicator">
+                                <li class="active"></li>
+                                <li class=""></li>
+                            </ul>
+                        </div>
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTN1J-GT5vkI7sTnWuCqDgZHAQVUy7pBYpmAei5Lko3ScTBWbrqWquVm-nWTlZeiTArgCp6REGMkxpDsLbhlpODL1G4lD_Hs3DmVPqMG_nI4qjk3vMHujZ2qPLLssW0HVVep-ot0Fh1oFGnFXRIpAnQvYLF5PbrViNS2eyPGM8C5y5VcGAsZtWdKxbfA2KROzXibNGx4RaaYbKZHQcvu9xVplDIYN3aK6xxQIzq0Uw.jpg?r=458"
+                                    alt="explorar">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQa-jUhdx0oQKJz0GTtZo4yYQhcWEsNMaBAZ7onD3i8bANV9IfNxuEP0ZJ1UiFihMJkNhcMABhc_e1lgs3nvpAfSKcGCsjLr5_4.webp?r=30a"
+                                    alt="explorar">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY67EE45PnEYwqPrmSbqO_p40j1iWjJYrepuRRljE5o747BRFp_Ki2uIQSuiDSZn5DOUH-D06BkH3E0ZEHH2aJy6koNTZ4iu0Sr7kyzBqlWvvVB9fl-aUy-NxnaYyw-I1Zy6hTDikDJOXdX3GA6pPKM_XK49jvcBK7-09pDVgyxeQto.jpg?r=0cc"
+                                    alt="explorar">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABayjlER9O0XVi3XKYy3S_BekY45Es8hvOeI70NI7vXbHBddop56x603bzckGIXpG2gpKKrh9pr_d4PZKyVsNxyCNdXbxCav6SORYJ82-gtFQNze6mJpmIm6vixvK40vBOOvjrN6eyCxQZpS-X6IqN3GSKr3bYixC4VPSO7N_tEZfwkS-0CyV4ocbkuehPfel1nnDv_bQFAfqPS6_IoRdw2esVjNLq3exWDI1Z1gUlA.jpg?r=217"
+                                    alt="explorar">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSOQeI61hg6yDdxOtFgLPrNZyIdCR80Ett6jBqpy6A8_TFgtuci33ho78HhGkcS7XxTkXb367tgIHsXIW-J7g9KWmUCR1xqNb7BjhFlG91_8-7mFToWdr-72j3z1hfdVCNzN6jaCJaOt1pphK65QglEvcVhDgmo-iEY.jpg?r=600"
+                                    alt="explorar">
+                            </div>
+                            <div class="carrucel">
+                                <img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQ6USUAg19ot6yEbZiTbX9B_o4oT1k06_p4JCiAasAxBAtTlRqFx_0Vm7d_otZ_4_YjXcfRyv3hBaQPuhON6DtRFXc1htLHRc2I.webp?r=857"
+                                    alt="explorar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carrusel-seccion">
+                <div>
+                    <!-- <h3>Valen la pena la espera</h3> -->
+                    <div class="slider">
+                        <ul class="pagination-indicator">
+                            <li class="active"></li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+                    <div class="carrucel-films">
+                        <div class="carrucel-contenedor">
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY0BGD42GjKvQ8aYCxn_fakQlGErqjKVaJGX_ij98aN2845iQvNLWykXF0Ee96EjVLcpqMAwYe8934G2ZHcavR8hrFlubNs7sIHQFpmihCMjAoFL_Ozff6lzqxeV9A2tgeoM3JMB9hs5If3XXO03nYCvDpqLoS2wQXM.webp?r=00c"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXm9IvorIAFDx3PkfOhbWRv4GExuPHJQMTulAdRgTxOjw4GLj5Iqhb4SRugr_YqaQz8io20-WExKreYb5nStjgZa23MeIHTeWR3SfFTzyiBz7j3oli-Fto0HVhPXwIuLS6pBV8WF-fnhgJxQSY6Sa98oxz2gCasml-gNbwl_iANNlb-FEt36cPulyx77zJACWPe533tadwwS_NXRHkzareJMmFRFrI8FvPbmd9AeQKz7ZbdyZyDF7893Rxchm4XxyA.jpg?r=e00"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZ_wyuaKDX2rC8U6CONyA1ZeHvlF8tcl3bTw7rcp4dnY9ziAEwIy_Gb6-cUO7khOgUB9sQoOr5YZcDqZ7JL0UZD2ImpFysUikCo.webp?r=01d"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABetXAoipgcIv51javrUcFeuyb_2Pw8hogwlhPUR6SobVROfBcoxLXxtSoOzB8y6JeOhIb__W2Osu9CWDEW3higDSj1R6fP1fI86ypl6ZafqOEuNPzzyj_MkY4rZtComcF2pM3AE07bbxlLkk9RgQ4GY6fz2jGT9kAhU.jpg?r=a07"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeEKwLne6oxJHxwNUzO4tnYzElf07-mL5FyrlvMR8cnUEzveo3-I0Z99LjT0pkvOBsIz8khVXK4YkS0l9qQBxq4RwMg0TUJ1484.jpg?r=fc5"
+                                    alt="explorar"></div>
+                            <div class="carrucel"><img class="carrucel-img"
+                                    src="https://occ-0-1919-1740.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdhE_YSE3riUZJanWzaQfpkrFD25Fi3BfUoJQtLpYVQrzPbBz4QnuXCJAobCscCzdVktdYX59FnF-98NJdtdjIq-WEjPkhLUiGM.jpg?r=fb3"
+                                    alt="explorar"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="social-link">
+                <a href="https://www.facebook.com/Netflixmx" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="FacebookMedium" data-icon-id=":rk:"
+                        aria-hidden="true" class="svg-icon svg-icon-facebook-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M13.99 13.16v8.82h-3.95v-8.82h-3.2V9.51h3.2V6.73c0-3.16 1.9-4.91 4.78-4.91q1.42.02 2.82.25v3.1h-1.6A1.82 1.82 0 0 0 14 7.15V9.5h3.5l-.56 3.65z"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+                <a href="https://www.instagram.com/NetflixLAT" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="InstagramMedium" data-icon-id=":rl:"
+                        aria-hidden="true" class="svg-icon svg-icon-instagram-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M21.93 16.123a5.96 5.96 0 0 1-1.615 4.189 5.9 5.9 0 0 1-4.19 1.615c-1.651.094-6.6.094-8.25 0a5.96 5.96 0 0 1-4.19-1.615 5.92 5.92 0 0 1-1.615-4.189c-.093-1.651-.093-6.6 0-8.25a5.94 5.94 0 0 1 1.615-4.19 5.95 5.95 0 0 1 4.19-1.61c1.651-.094 6.6-.094 8.25 0a5.96 5.96 0 0 1 4.19 1.615 5.92 5.92 0 0 1 1.615 4.189c.093 1.651.093 6.595 0 8.246M20.2 12c0-1.455.12-4.578-.4-5.894a3.37 3.37 0 0 0-1.9-1.9c-1.312-.517-4.439-.4-5.894-.4s-4.578-.121-5.894.4a3.38 3.38 0 0 0-1.9 1.9c-.517 1.312-.4 4.439-.4 5.894s-.121 4.578.4 5.894a3.38 3.38 0 0 0 1.9 1.9c1.312.517 4.44.4 5.894.4s4.578.121 5.894-.4a3.38 3.38 0 0 0 1.9-1.9c.519-1.312.4-4.439.4-5.894m-3.07 0A5.127 5.127 0 1 1 12 6.873 5.12 5.12 0 0 1 17.129 12zm-1.794 0a3.333 3.333 0 1 0-6.664 0 3.333 3.333 0 0 0 6.663 0zm2-4.141a1.2 1.2 0 1 1 1.2-1.2 1.193 1.193 0 0 1-1.197 1.2z"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+                <a class="social-link" href="https://twitter.com/netflixLAT" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="TwitterMedium" data-icon-id=":rm:"
+                        aria-hidden="true" class="svg-icon svg-icon-twitter-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M20.77 8.2A12.65 12.65 0 0 1 8.03 20.96c-2.44 0-4.83-.7-6.88-2.01q.54.06 1.08.05a9 9 0 0 0 5.56-1.91 4.5 4.5 0 0 1-4.19-3.1q.42.06.85.06.6 0 1.17-.15a4.5 4.5 0 0 1-3.58-4.4v-.06a4.5 4.5 0 0 0 2.02.57 4.5 4.5 0 0 1-1.38-5.99c2.27 2.8 5.63 4.5 9.23 4.69a4.48 4.48 0 0 1 7.64-4.09q1.51-.3 2.84-1.08A4.5 4.5 0 0 1 20.42 6q1.34-.15 2.58-.69a10 10 0 0 1-2.25 2.32q.02.28.02.58"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+                <a class="social-link" href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA" target="_blank">
+                    <svg viewBox="0 0 24 24" width="24" height="24" data-icon="YoutubeMedium" data-icon-id=":rn:"
+                        aria-hidden="true" class="svg-icon svg-icon-youtube-logo" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M22.54 6.67c-.25-.95-1-1.7-1.94-1.96-1.72-.46-8.6-.46-8.6-.46s-6.88 0-8.6.46c-.95.26-1.69 1-1.94 1.96A29 29 0 0 0 1 12q-.02 2.69.46 5.33c.25.95 1 1.7 1.94 1.96 1.72.46 8.6.46 8.6.46s6.89 0 8.6-.46c.95-.26 1.69-1 1.94-1.96q.48-2.64.46-5.33.02-2.69-.46-5.33m-12.79 8.6V8.73L15.5 12z"
+                            clip-rule="evenodd"></path>
+                    </svg></a>
+            </section>
+            <section class="atencion_cliente">
+                <ul>
+                    <li><a href="/browse/audio-description" target="_self">Audio descriptivo</a></li>
+                    <li><a href="https://help.netflix.com/" target="_self">Centro de ayuda</a></li>
+                    <li><a href="/redeem" target="_self"> Tarjetas de regalo</a></li>
+                    <li><a href="https://media.netflix.com/" target="_self">Prensa</a></li>
+                    <li><a href="http://ir.netflix.com/" target="_self"> Relaciones con inversionistas</a></li>
+                    <li><a href="https://jobs.netflix.com/" target="_self">Empleo</a></li>
+                    <li><a href="https://help.netflix.com/legal/termsofuse" target="_self">Términos de uso</a></li>
+                    <li><a href="https://help.netflix.com/legal/privacy" target="_self">Privacidad</a></li>
+                    <li><a href="https://help.netflix.com/legal/notices" target="_self">Avisos legales</a></li>
+                    <li><a href="/Cookies" target="_self"> Preferencias de cookies</a></li>
+                    <li><a href="https://help.netflix.com/legal/corpinfo" target="_self">Información corporativa</a>
+                    </li>
+                    <li><a href="https://help.netflix.com/contactus" target="_self">Contáctanos</a></li>
+                </ul>
+            </section>
+            <section class="derechos_autor">
+                <p>© 1997-2026 Netflix, Inc.</p>
+            </section>
+        </footer>
+    </div>
+</body>
+
+</html>

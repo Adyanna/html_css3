@@ -1,0 +1,124 @@
+/* ======================BODY======================= */
+
+body {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position: top;
+    background-color: black;
+    width: 100%;
+    margin: 0px;
+}
+
+/* ===================== MAIN ============================= */
+.main {
+    grid-area: main;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+
+/* =============================CARRUSEL================ */
+
+.carrusel-seccion {
+    display: block;
+    width: 94.5vw;
+    background-color: black;
+}
+
+.carrucel-inicio {
+    background: linear-gradient(180deg, transparent 0%, black 50%, black 99.9%);
+}
+
+.carrucel-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overflow: visible;
+    scrollbar-width: none;
+    gap: 15px;
+}
+
+.carrucel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+}
+
+.carrucel-top-ten {
+    width: 220px;
+    height: 150px;
+    transition: transform 1s ease;
+}
+
+.carrucel-top-ten:hover{
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+.carrucel-vsg-top-10-rank {
+    width: 250px;
+}
+
+.carrucel-img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    transition: transform 1s ease;
+}
+
+.carrucel-img:hover{
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+.slider {
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-left: 3vw; */
+}
+
+.pagination-indicator {
+    list-style-type: none;
+    margin: -24px 2vw 12px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+.pagination-indicator li {
+    background-color: #4d4d4d;
+    display: inline-block;
+    height: 2px;
+    margin-left: 1px;
+    width: 25px;
+}
+
+.active {
+    background-color: white;
+}
+
+
+@media (max-width:1070px) {
+
+    /* ============================= MAIN =============================== */
+    .main {
+        padding-left: 1rem;
+    }
+
+
+}
+@media (max-width:480px) {
+ 
+    .atencion_cliente ul li {
+        width: 100%;
+    }
+
+
+}
